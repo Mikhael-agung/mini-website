@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Bicopis</title>
+
+    <!-- Font Awesome & AOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo">Bi•COFFEE</div>
+        <nav>
+          <a href="main.html#home">Home</a>
+          <a href="about.html#about" class="active">About</a>
+          <a href="menu.html#menu">Menu</a>
+          <a href="#">Services</a>
+          <a href="#">Testimoni</a>
+        </nav>
+        <button class="contact-btn">Contact-Us</button>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <main>
+      <section class="about-section" id="about" data-aos="fade-up">
+        <div class="section-content">
+          <div class="about-top">
+            <div class="about-images" data-aos="zoom-in">
+              <img src="images/about.webp" alt="Tentang Kami 1" />
+              <img src="images/food.webp" alt="Tentang Kami 2" />
+            </div>
+            <div class="about-text" data-aos="fade-left">
+              <h4>Tentang Kami</h4>
+              <h2>Sejarah</h2>
+              <p>
+                Didirikan pada tahun 2012, Bicoffee menawarkan perpaduan unik
+                antara hidangan tradisional Indonesia dan Barat, dipadukan
+                sempurna dengan kopi khas kami. Lebih dari sekadar makanan dan
+                minuman enak, kami menciptakan suasana nyaman yang cocok untuk
+                bersantai bersama teman dan keluarga. Mulai dari secangkir kopi,
+                menikmati hidangan otentik, hingga menikmati hiburan live music
+                — semua di Bicoffee!
+              </p>
+            </div>
+          </div>
+
+          <div class="about-features">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">01</div>
+              <h3>Pelayanan dan Makanan</h3>
+              <p>
+                Restoran kami menyajikan kualitas luar biasa, dengan hidangan
+                yang dibuat dari bahan-bahan segar.
+              </p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">02</div>
+              <h3>Layanan & Acara</h3>
+              <p>
+                Nikmati pertunjukan musik live dan suasana yang tak terlupakan
+                dalam pelayanan kami.
+              </p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-icon">03</div>
+              <h3>Terjangkau Bagi Semua</h3>
+              <p>
+                Kami menyediakan pengalaman bersantap yang ramah secara ekonomi
+                tanpa mengurangi kualitas.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-bottom">
+            <div class="about-bottom-text" data-aos="fade-right">
+              <h2>
+                Nikmati <span class="highlight1">Esensinya</span><br />
+                Rangkut <span class="highlight2">Budayanya</span>
+              </h2>
+              <p>
+                Nikmati esensi tradisi dalam setiap gigitan dan rangkulan budaya
+                yang ada di sekitar Anda. Di restoran kami, kami mewujudkan cita
+                rasa autentik dengan suasana yang ramah dan tenang.
+              </p>
+            </div>
+            <div class="about-bottom-image" data-aos="fade-left">
+              <img src="images/latte-art.webp" alt="Latte Art" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      AOS.init({
+        duration: 800,
+        offset: 200,
+        once: true,
+        startEvent: "DOMContentLoaded",
+      });
+    </script>
+  </body>
+</html>

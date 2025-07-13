@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,15 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar and Header -->
     <header>
       <nav class="navbar section-content">
-        <a href="" class="nav-logo">
-          <h2 class="logo-text">Bicopis ☕</h2>
+        <a href="main.html" class="nav-logo">
+          <h2 class="logo-text">Bi•COFFEE</h2>
         </a>
+
         <ul class="nav-menu">
           <li class="nav-item">
             <button
@@ -25,55 +30,53 @@
               aria-label="Close menu"
             ></button>
           </li>
-
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
           <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item">
+            <a href="#testimoni" class="nav-link">Testimoni</a>
           </li>
           <li class="nav-item">
-            <a href="#home" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Testimoni</a>
-          </li>
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Contact</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
           </li>
         </ul>
+
+        <button class="contact-btn">Contact-Us</button>
 
         <button
           id="menu-open-button"
           class="fas fa-bars"
-          aria-label="Close menu"
+          aria-label="Open menu"
         ></button>
       </nav>
     </header>
 
     <!-- Hero section  -->
     <main>
-      <section class="hero-section">
+      <section class="hero-section" data-aos="fade-up">
         <div class="section-content">
           <div class="hero-details">
-            <h2 class="title">Selamat Datang di Bicopis</h2>
-            <h3 class="subtitle">Rasakan harmoni rasa dalam setiap tegukan</h3>
-            <p class="description">
+            <h2 class="title" data-aos="fade-right">
+              Selamat Datang di Bicopis
+            </h2>
+            <h3 class="subtitle" data-aos="fade-left">
+              Rasakan harmoni rasa dalam setiap tegukan
+            </h3>
+            <p class="description" data-aos="zoom-in" data-aos-delay="300">
               Bicopis adalah tempat di mana cita rasa coklat dan kopi Indonesia
               berpadu dalam harmoni yang sempurna. Nikmati pengalaman unik
               dengan setiap tegukan yang membawa Anda ke dalam kelezatan lokal.
             </p>
-            <div class="buttons">
+            <div class="buttons" data-aos="fade-up" data-aos-delay="500">
               <a href="#" class="button order-now">Order Now</a>
               <a href="#" class="button contact-us">Contact Us</a>
             </div>
           </div>
-          <div class="hero-image-wrapper">
+          <div class="hero-image-wrapper" data-aos="fade-left">
             <img
-              src="image/images/coffee-hero-section.png"
+              src="images/coffee-hero-section.png"
               alt="Hero"
               class="hero-image"
             />
@@ -81,25 +84,111 @@
         </div>
       </section>
 
+      <div class="transition-section"></div>
+
       <!-- about -->
-       <section class="about-section">
+      <section class="about-section" data-aos="fade-up">
         <div class="section-content">
-          <div class="about-image-wrapper">
-            <img src="image/images/about-image.jpg" alt="about" class="about-image" />
+          <div class="about-image-wrapper" data-aos="zoom-in">
+            <img src="images/about.webp" alt="about" class="about-image" />
           </div>
-          <div class="about-details">
-              <h2 class="section-title">About US</h2>
-              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptate temporibus, ipsam rem eos odit ratione dolorum facere, amet ducimus, voluptatem ab voluptatum maiores doloremque saepe sapiente iusto similique possimus!</p>
-              <div class="social-link-list">
-                <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-              </div>
+          <div class="about-details" data-aos="fade-left">
+            <h2 class="section-title">About US</h2>
+            <p class="text">
+              Selamat datang di Bicoffe! Di sini, kami memadukan cita rasa
+              masakan Indonesia dan Barat dalam suasana yang nyaman dan ramah.
+              Mau menikmati hidangan tradisional lokal atau makanan Barat
+              klasik, tempat kami yang nyaman adalah spot sempurna untuk
+              bersantai, dan menikmati makanan lezat dengan suasana yang hangat
+              dan mengundang.
+            </p>
+            <div class="social-link-list" data-aos="fade-up">
+              <a href="#" class="social-link" title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" title="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
-        </div>   
-       </section>
+          </div>
+        </div>
+
+        <!-- Card Section -->
+        <!-- <div class="card-container">
+          <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="card-title">Cita Rasa Unik</h3>
+            <p class="card-text">Racikan spesial perpaduan kopi dan coklat Indonesia dengan kualitas premium.</p>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="card-title">Tempat Cozy</h3>
+            <p class="card-text">Tempat nongkrong nyaman dengan nuansa klasik-modern yang cocok untuk semua usia.</p>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="card-title">Pelayanan Ramah</h3>
+            <p class="card-text">Staf kami siap memberikan pengalaman terbaik untuk setiap kunjungan kamu.</p>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Menu Section -->
+      <section class="menu-section" data-aos="fade-up">
+        <h2 class="section-title">Our Favourite Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img src="images/Blue-Sparkling-Ocean.webp " alt="cold-beverages
+              class="menu-image" />
+              <h3 class="name">cold-beverages</h3>
+              <p class="description">
+                BLUE AND RED BERRY SYRUP, LIME AND SODA WATER
+              </p>
+            </li>
+            <li class="menu-item">
+              <img src="images/Beef-Cheese-Burger.webp " alt="cold-beverages
+              class="menu-image" />
+              <h3 class="name">Beef Cheese Burger</h3>
+              <p class="description">
+                BEEF PATTY WITH BBQ SAUCE, CHEESE AND FRENCH FRIES
+              </p>
+            </li>
+            <li class="menu-item">
+              <img src="images/Baked-Salmon-Curry.webp " alt="cold-beverages
+              class="menu-image" />
+              <h3 class="name">Baked Salmon Curry</h3>
+              <p class="description">
+                BAKED SALMON, BAKED POTATO, BABY CORN, CURRY SAUCE
+              </p>
+            </li>
+            <li class="menu-item">
+              <img src="images/Choco-Devil.webp " alt="cold-beverages
+              class="menu-image" />
+              <h3 class="name">Choco Devil</h3>
+              <h4>Descript</h4>
+              <p class="description">
+                Egg Waffle with choco couverture and ice cream Order
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      AOS.init({
+        duration: 800,
+        offset: 200,
+        once: true,
+        startEvent: "DOMContentLoaded",
+      });
+    </script>
   </body>
 </html>

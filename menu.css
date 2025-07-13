@@ -1,0 +1,162 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #faeffa; /* ungu muda */
+  padding: 30px 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+}
+
+nav a.active {
+  color: #b46745;
+}
+
+.contact-btn {
+  padding: 10px 25px;
+  border: 2px solid #b46745;
+  background: transparent;
+  color: #000;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-btn:hover {
+  background: #b46745;
+  color: #fff;
+}
+
+/* Section Title */
+.menu-header {
+  background-color: #f6f6ff;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.menu-header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Main Layout */
+.menu-container {
+  display: flex;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+/* Categories Sidebar */
+.categories {
+  flex: 1;
+  max-width: 220px;
+}
+
+.categories h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #555;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories li {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f1e2dd;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.categories li.active,
+.categories li:hover {
+  background-color: #e2c9c1;
+  border-color: #b46745;
+}
+
+.categories li span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* All Menu Section */
+.all-menu {
+  flex: 4;
+}
+
+.menu-count {
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #b46745;
+  font-size: 16px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.menu-item h4 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.menu-item p {
+  color: #444;
+}

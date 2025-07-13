@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bi•COFFEE Menu</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="logo">Bi•COFFEE</div>
+        <nav>
+          <a href="main.html#home">Home</a>
+          <a href="about.html#about">About</a>
+          <a href="#" class="active">Menu</a>
+          <a href="#">Services</a>
+          <a href="#">Testimoni</a>
+        </nav>
+        <button class="contact-btn">Contact-Us</button>
+      </div>
+    </header>
+
+    <section class="menu-header" data-aos="fade-up" data-aos-delay="200">
+      <h1>Our Menu</h1>
+    </section>
+
+    <main class="menu-container">
+      <aside class="categories" data-aos="fade-right" data-aos-duration="600">
+        <h3>Categories</h3>
+        <ul>
+          <li class="active">All<br /><span>135 Menu</span></li>
+          <li>Main Course<br /><span>34 Menu</span></li>
+          <li>Hot Drinks<br /><span>14 Menu</span></li>
+          <li>Ice Drinks<br /><span>48 Menu</span></li>
+          <li>Waffle & Dessert<br /><span>17 Menu</span></li>
+          <li>Manual Brew<br /><span>7 Menu</span></li>
+          <li>Appetizer & Snack<br /><span>20 Menu</span></li>
+        </ul>
+      </aside>
+
+      <section class="all-menu" data-aos="fade-left" data-aos-duration="600">
+        <div class="menu-count">15 Menu</div>
+        <div class="menu-grid">
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Nasi Goreng Kampung" />
+            <h4>Nasi Goreng Kampung</h4>
+            <p>Rp. 55.000</p>
+          </div>
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Fried Rice Hickory Chicken Wings" />
+            <h4>Fried Rice Hickory Chicken Wings</h4>
+            <p>Rp. 55.000</p>
+          </div>
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Barbeque Beef Fried Rice" />
+            <h4>Barbeque Beef Fried Rice</h4>
+            <p>Rp. 55.000</p>
+          </div>
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="400">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Fried Rice Chicken Sambal" />
+            <h4>Fried Rice Chicken Sambal</h4>
+            <p>Rp. 55.000</p>
+          </div>
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="500">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Spaghetti Bolognaise" />
+            <h4>Spaghetti Bolognaise</h4>
+            <p>Rp. 55.000</p>
+          </div>
+          <div class="menu-item" data-aos="zoom-in" data-aos-delay="600">
+            <img src="images/Baked-Salmon-Curry.webp" alt="Spaghetti Creamy Pomodoro" />
+            <h4>Spaghetti Creamy Pomodoro</h4>
+            <p>Rp. 55.000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      AOS.init({
+        duration: 800,
+        offset: 200,
+        once: true,
+        startEvent: "DOMContentLoaded",
+      });
+    </script>
+  </body>
+</html>
