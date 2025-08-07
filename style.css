@@ -144,6 +144,11 @@ header .navbar {
   color: var(--white-color);
 }
 
+.navbar .nav-menu .nav-link.active {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
 .navbar :where(#menu-close-button, #menu-open-button) {
   display: none;
 }
@@ -462,6 +467,103 @@ header .navbar {
   font-weight: var(--font-weight-semibold);
 }
 
+.menu-section .menu-list .menu-item .description-menu { 
+  font-size: var(--font-size-m);
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 60px 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1 1 250px;
+  max-width: 350px;
+}
+
+.footer-brand .logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-menu,
+.footer-help,
+.footer-contact {
+  flex: 1 1 150px;
+}
+
+.footer-menu h3,
+.footer-help h3,
+.footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer-menu ul,
+.footer-help ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-menu li,
+.footer-help li {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
 /*  */
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
@@ -604,7 +706,7 @@ header .navbar {
 }
 
 /*! Mobile responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
@@ -623,11 +725,21 @@ header .navbar {
     backdrop-filter: blur(3.1px);
     background-color: rgba(0, 0, 0, 0.5);
   }
+  
+  .navbar #menu-open-button {
+    display: block;
+    font-size: var(--font-size-xl);
+  }
+
+  .navbar #menu-close-button {
+    display: block;
+    font-size: var(--font-size-xl);
+  }
 
   .hero-section {
     padding: 3rem 1rem;
   }
-
+  
   .hero-section .section-content {
     margin-top: 50px;
     flex-direction: column;
@@ -642,15 +754,6 @@ header .navbar {
     align-items: center;
   }
 
-  .navbar #menu-open-button {
-    display: block;
-    font-size: var(--font-size-xl);
-  }
-
-  .navbar #menu-close-button {
-    display: block;
-    font-size: var(--font-size-xl);
-  }
 
   .hero-section .hero-details .subtitle,
   .hero-section .hero-details .description {
@@ -772,18 +875,18 @@ header .navbar {
 
 @media (max-width: 680px) {
  .menu-section {
-    padding: 0 8px; /* kecilin padding container */
+    padding: 0 8px; 
   }
 
   .menu-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* penting nih biar ke sisi */
+    justify-content: space-between;
     gap: 12px;
   }
 
   .menu-item {
-    width: calc(50% - 6px); /* biar pas 2 kolom dengan gap */
+    width: calc(50% - 6px);
     padding: 12px 8px;
     box-sizing: border-box;
   }

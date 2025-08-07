@@ -169,6 +169,12 @@ header .navbar {
   color: #fff;
 }
 
+.navbar .nav-menu .nav-link.active {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+
 /* SECTION - ABOUT */
 .about-section {
   padding: 80px 30px;
