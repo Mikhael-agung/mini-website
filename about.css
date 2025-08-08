@@ -174,10 +174,9 @@ header .navbar {
   color: var(--white-color);
 }
 
-
 /* SECTION - ABOUT */
 .about-section {
-  padding: 80px 30px;
+  padding: 100px 30px;
 }
 
 .about-header {
@@ -193,33 +192,15 @@ header .navbar {
 .about-card {
   display: flex;
   flex-wrap: wrap;
-  padding: 45px;
-  justify-content: center;
-  background-color: #FBFBFB;
-  gap: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1rem;
-  border-radius: 20px;
   align-items: center;
-  text-align: left;
-}
-
-.image1 {
-  position: relative;
-  top: 30px;
-}
-
-.image2 {
-  position: relative;
-  top: -30px;
-}
-
-.about-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 60px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .about-images {
@@ -227,6 +208,7 @@ header .navbar {
   gap: 1.5rem;
   flex: 1 1 300px;
   justify-content: center;
+  position: relative;
 }
 
 .about-images img {
@@ -238,30 +220,36 @@ header .navbar {
   transition: transform 0.3s ease;
 }
 
+.about-images .image1 {
+  transform: translateY(20px);
+}
+
+.about-images .image2 {
+  transform: translateY(-20px);
+}
+
 .about-images img:hover {
   transform: scale(1.03);
 }
 
 .about-text {
-  max-width: 640px;
+  flex: 1 1 400px;
 }
 
 .about-text h4 {
-  font-size: 1.2em;
   color: #a35b33;
-  font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .about-text h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .about-text p {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   color: #444;
-  line-height: 1.9;
+  line-height: 1.6;
 }
 
 /* Fitur Section */
@@ -454,7 +442,6 @@ header .navbar {
     color: #fff;
   }
 }
-
 
 @media (max-width: 768px) {
   :root {

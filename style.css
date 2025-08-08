@@ -645,6 +645,35 @@ header .navbar {
     font-size: var(--font-size-l);
   }
 
+   .contact-us {
+    background: transparent;
+    color: var(--primry-color);
+    border-color: var(--primry-color);
+  }
+
+  .contact-us:hover {
+    border-color: var(--white-color);
+    background: var(--secondary-color);
+    color: var(--primry-color);
+  }
+
+  .contact-btn2 {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #b46745;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .contact-btn2:hover {
+    background: #b46745;
+    color: #fff;
+  }
+
   .hero-section .hero-details .subtitle,
   .hero-section .hero-details .description {
     max-width: 100%;
@@ -675,34 +704,6 @@ header .navbar {
     aspect-ratio: 1;
   }
 
-  .contact-us {
-    background: transparent;
-    color: var(--primry-color);
-    border-color: var(--primry-color);
-  }
-
-  .contact-us:hover {
-    border-color: var(--white-color);
-    background: var(--secondary-color);
-    color: var(--primry-color);
-  }
-
-  .contact-btn2 {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: 2px solid #b46745;
-    background: transparent;
-    color: #000;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .contact-btn2:hover {
-    background: #b46745;
-    color: #fff;
-  }
 }
 
 /*! Mobile responsive */

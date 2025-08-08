@@ -22,8 +22,5 @@ function updateContactButtonVisibility() {
     }
   }
 
-  // Run once saat load
   updateContactButtonVisibility();
-
-  // Jalanin lagi kalau user resize browser
   window.addEventListener('resize', updateContactButtonVisibility);
