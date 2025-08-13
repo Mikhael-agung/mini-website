@@ -91,7 +91,7 @@ img {
   background-color: var(--secondary-color);
 }
 
-.logo-img{
+.logo-img {
   width: 1em;
   height: 1em;
   vertical-align: middle;
@@ -488,7 +488,6 @@ aside img {
   line-height: 1.6;
 }
 
-
 /* footer */
 .footer {
   background-color: #000;
@@ -582,6 +581,59 @@ aside img {
 
 /*  */
 @media screen and (max-width: 1024px) {
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+
+  body.show-mobile-menu header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.1px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar :where(#menu-open-button, #menu-close-button) {
+    display: block;
+    font-size: var(--font-size-xl);
+  }
+
+    .contact-us {
+    background: transparent;
+    color: var(--primry-color);
+    border-color: var(--primry-color);
+  }
+
+  .contact-us:hover {
+    border-color: var(--white-color);
+    background: var(--secondary-color);
+    color: var(--primry-color);
+  }
+
+  .contact-btn2 {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #b46745;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .contact-btn2:hover {
+    background: #b46745;
+    color: #fff;
+  }
+
   .menu-section .menu-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -589,6 +641,33 @@ aside img {
   }
   .menu-section .menu-list .menu-item {
     width: calc(100% / 3 - 20px);
+  }
+
+  .about-section .section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .about-image-wrapper .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title-about {
+    padding: 6px;
+  }
+
+  .about-section .about-details,
+  .about-aside {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+   .about-section .about-image-wrapper .about-image {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
   }
 }
 
@@ -661,7 +740,6 @@ aside img {
     font-size: var(--font-size-l);
   }
 
-  /* end navbar */
 
   .contact-us {
     background: transparent;
@@ -686,12 +764,13 @@ aside img {
     cursor: pointer;
     transition: all 0.3s;
   }
-
+  
   .contact-btn2:hover {
     background: #b46745;
     color: #fff;
   }
 
+  /* end navbar */
   .hero-section .hero-details .subtitle,
   .hero-section .hero-details .description {
     max-width: 100%;
