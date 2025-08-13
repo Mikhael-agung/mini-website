@@ -91,7 +91,7 @@ img {
   background-color: var(--secondary-color);
 }
 
-.logo-img{
+.logo-img {
   width: 1em;
   height: 1em;
   vertical-align: middle;
@@ -379,10 +379,10 @@ header .navbar {
   line-height: 1.6;
 }
 
-aside img {
+/* aside img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* About END */
 
@@ -488,7 +488,6 @@ aside img {
   line-height: 1.6;
 }
 
-
 /* footer */
 .footer {
   background-color: #000;
@@ -589,6 +588,25 @@ aside img {
   }
   .menu-section .menu-list .menu-item {
     width: calc(100% / 3 - 20px);
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    max-width: 90%;
   }
 }
 
@@ -812,14 +830,28 @@ aside img {
   }
 
   /* about */
-  .about-section .section-content {
+  .about .row {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
-  .about-section .about-image-wrapper .about-image {
+  .about-img {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .about-img img {
+    max-width: 250px; /* Atur sesuai selera */
     height: auto;
+    border-radius: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .section-title-about {
