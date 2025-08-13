@@ -581,6 +581,59 @@ header .navbar {
 
 /*  */
 @media screen and (max-width: 1024px) {
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+
+  body.show-mobile-menu header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.1px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar :where(#menu-open-button, #menu-close-button) {
+    display: block;
+    font-size: var(--font-size-xl);
+  }
+
+    .contact-us {
+    background: transparent;
+    color: var(--primry-color);
+    border-color: var(--primry-color);
+  }
+
+  .contact-us:hover {
+    border-color: var(--white-color);
+    background: var(--secondary-color);
+    color: var(--primry-color);
+  }
+
+  .contact-btn2 {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #b46745;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .contact-btn2:hover {
+    background: #b46745;
+    color: #fff;
+  }
+
   .menu-section .menu-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -588,25 +641,6 @@ header .navbar {
   }
   .menu-section .menu-list .menu-item {
     width: calc(100% / 3 - 20px);
-  }
-
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .about-text {
-    max-width: 90%;
   }
 }
 
@@ -679,7 +713,6 @@ header .navbar {
     font-size: var(--font-size-l);
   }
 
-  /* end navbar */
 
   .contact-us {
     background: transparent;
@@ -704,12 +737,13 @@ header .navbar {
     cursor: pointer;
     transition: all 0.3s;
   }
-
+  
   .contact-btn2:hover {
     background: #b46745;
     color: #fff;
   }
 
+  /* end navbar */
   .hero-section .hero-details .subtitle,
   .hero-section .hero-details .description {
     max-width: 100%;
