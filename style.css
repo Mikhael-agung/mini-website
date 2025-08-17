@@ -297,7 +297,7 @@ header .navbar {
 .about-section .section-content {
   display: flex;
   gap: 60px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
